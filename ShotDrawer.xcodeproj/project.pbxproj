@@ -6,7 +6,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A00100000000000000000001 /* ScreenshotInboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000001 /* ScreenshotInboxApp.swift */; };
+		A00100000000000000000001 /* ShotDrawerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000001 /* ShotDrawerApp.swift */; };
 		A00100000000000000000002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000002 /* AppState.swift */; };
 		A00100000000000000000003 /* SidebarDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000003 /* SidebarDestination.swift */; };
 		A00100000000000000000004 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000004 /* MainWindow.swift */; };
@@ -28,7 +28,7 @@
 		A00100000000000000000014 /* ScreenshotDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000016 /* ScreenshotDetailView.swift */; };
 		A00100000000000000000015 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000017 /* OCRService.swift */; };
 		A00100000000000000000016 /* ScreenshotAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000018 /* ScreenshotAnalyzer.swift */; };
-		A00100000000000000000017 /* ScreenshotInboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000019 /* ScreenshotInboxTests.swift */; };
+		A00100000000000000000017 /* ShotDrawerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000019 /* ShotDrawerTests.swift */; };
 		A00100000000000000000018 /* ScreenshotCandidateClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0010000000000000000001B /* ScreenshotCandidateClassifier.swift */; };
 		A00100000000000000000019 /* BarcodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0010000000000000000001C /* BarcodeService.swift */; };
 		A0010000000000000000001A /* ScreenshotClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0010000000000000000001D /* ScreenshotClassifier.swift */; };
@@ -41,7 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B00100000000000000000001 /* ScreenshotInboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotInboxApp.swift; sourceTree = "<group>"; };
+		B00100000000000000000001 /* ShotDrawerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotDrawerApp.swift; sourceTree = "<group>"; };
 		B00100000000000000000002 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		B00100000000000000000003 /* SidebarDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarDestination.swift; sourceTree = "<group>"; };
 		B00100000000000000000004 /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
@@ -53,8 +53,8 @@
 		B0010000000000000000000A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B0010000000000000000000B /* AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogger.swift; sourceTree = "<group>"; };
 		B0010000000000000000000C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B0010000000000000000000D /* ScreenshotInbox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenshotInbox.entitlements; sourceTree = "<group>"; };
-		B0010000000000000000000E /* ScreenshotInbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenshotInbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0010000000000000000000D /* ShotDrawer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShotDrawer.entitlements; sourceTree = "<group>"; };
+		B0010000000000000000000E /* ShotDrawer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShotDrawer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0010000000000000000000F /* ScreenshotFolderAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotFolderAccess.swift; sourceTree = "<group>"; };
 		B00100000000000000000010 /* ScreenshotFolderWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotFolderWatcher.swift; sourceTree = "<group>"; };
 		B00100000000000000000011 /* ScreenshotItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotItem.swift; sourceTree = "<group>"; };
@@ -65,8 +65,8 @@
 		B00100000000000000000016 /* ScreenshotDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotDetailView.swift; sourceTree = "<group>"; };
 		B00100000000000000000017 /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
 		B00100000000000000000018 /* ScreenshotAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotAnalyzer.swift; sourceTree = "<group>"; };
-		B00100000000000000000019 /* ScreenshotInboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotInboxTests.swift; sourceTree = "<group>"; };
-		B0010000000000000000001A /* ScreenshotInboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenshotInboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00100000000000000000019 /* ShotDrawerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotDrawerTests.swift; sourceTree = "<group>"; };
+		B0010000000000000000001A /* ShotDrawerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShotDrawerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0010000000000000000001B /* ScreenshotCandidateClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotCandidateClassifier.swift; sourceTree = "<group>"; };
 		B0010000000000000000001C /* BarcodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeService.swift; sourceTree = "<group>"; };
 		B0010000000000000000001D /* ScreenshotClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotClassifier.swift; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXContainerItemProxy section */
-		CA0100000000000000000001 = {isa = PBXContainerItemProxy; containerPortal = E00100000000000000000002; proxyType = 1; remoteGlobalIDString = E00100000000000000000001; remoteInfo = ScreenshotInbox; };
+		CA0100000000000000000001 = {isa = PBXContainerItemProxy; containerPortal = E00100000000000000000002; proxyType = 1; remoteGlobalIDString = E00100000000000000000001; remoteInfo = ShotDrawer; };
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +88,8 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D00100000000000000000001 = {isa = PBXGroup; children = (D00100000000000000000002 /* ScreenshotInbox */, D0010000000000000000000F /* ScreenshotInboxTests */, D0010000000000000000000A /* Products */); sourceTree = "<group>"; };
-		D00100000000000000000002 /* ScreenshotInbox */ = {isa = PBXGroup; path = ScreenshotInbox; sourceTree = "<group>"; children = (D00100000000000000000003 /* App */, D00100000000000000000004 /* Models */, D0010000000000000000000D /* Services */, D0010000000000000000000E /* Database */, D00100000000000000000005 /* Views */, D00100000000000000000009 /* Utilities */, D00100000000000000000008 /* Resources */, B0010000000000000000000D /* ScreenshotInbox.entitlements */); };
+		D00100000000000000000001 = {isa = PBXGroup; children = (D00100000000000000000002 /* ShotDrawer */, D0010000000000000000000F /* ShotDrawerTests */, D0010000000000000000000A /* Products */); sourceTree = "<group>"; };
+		D00100000000000000000002 /* ShotDrawer */ = {isa = PBXGroup; path = ShotDrawer; sourceTree = "<group>"; children = (D00100000000000000000003 /* App */, D00100000000000000000004 /* Models */, D0010000000000000000000D /* Services */, D0010000000000000000000E /* Database */, D00100000000000000000005 /* Views */, D00100000000000000000009 /* Utilities */, D00100000000000000000008 /* Resources */, B0010000000000000000000D /* ShotDrawer.entitlements */); };
 		D00100000000000000000003 /* App */ = {isa = PBXGroup; path = App; sourceTree = "<group>"; children = (B00100000000000000000001, B00100000000000000000002); };
 		D00100000000000000000004 /* Models */ = {isa = PBXGroup; path = Models; sourceTree = "<group>"; children = (B00100000000000000000003, B00100000000000000000011, B0010000000000000000001E); };
 		D0010000000000000000000D /* Services */ = {isa = PBXGroup; path = Services; sourceTree = "<group>"; children = (B0010000000000000000000F, B00100000000000000000010, B0010000000000000000001B, B0010000000000000000001C, B0010000000000000000001D, B0010000000000000000001F, B00100000000000000000020, B00100000000000000000021, B00100000000000000000014, B00100000000000000000015, B00100000000000000000017, B00100000000000000000018); };
@@ -101,14 +101,14 @@
 		D00100000000000000000008 /* Resources */ = {isa = PBXGroup; path = Resources; sourceTree = "<group>"; children = (B0010000000000000000000C); };
 		D00100000000000000000009 /* Utilities */ = {isa = PBXGroup; path = Utilities; sourceTree = "<group>"; children = (B0010000000000000000000A, B0010000000000000000000B); };
 		D0010000000000000000000A /* Products */ = {isa = PBXGroup; name = Products; sourceTree = "<group>"; children = (B0010000000000000000000E, B0010000000000000000001A); };
-		D0010000000000000000000F /* ScreenshotInboxTests */ = {isa = PBXGroup; path = ScreenshotInboxTests; sourceTree = "<group>"; children = (B00100000000000000000019); };
+		D0010000000000000000000F /* ShotDrawerTests */ = {isa = PBXGroup; path = ShotDrawerTests; sourceTree = "<group>"; children = (B00100000000000000000019); };
 		D0010000000000000000000B /* MenuBar */ = {isa = PBXGroup; path = MenuBar; sourceTree = "<group>"; children = (B00100000000000000000008); };
 		D0010000000000000000000C /* Settings */ = {isa = PBXGroup; path = Settings; sourceTree = "<group>"; children = (B00100000000000000000009); };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E00100000000000000000001 /* ScreenshotInbox */ = {isa = PBXNativeTarget; buildConfigurationList = F00100000000000000000002; buildPhases = (C00100000000000000000003 /* Sources */, C00100000000000000000001 /* Frameworks */, C00100000000000000000002 /* Resources */); buildRules = (); dependencies = (); name = ScreenshotInbox; productName = ScreenshotInbox; productReference = B0010000000000000000000E; productType = "com.apple.product-type.application"; };
-		E00100000000000000000003 /* ScreenshotInboxTests */ = {isa = PBXNativeTarget; buildConfigurationList = F00100000000000000000009; buildPhases = (C00100000000000000000005 /* Sources */, C00100000000000000000004 /* Frameworks */); buildRules = (); dependencies = (CA0300000000000000000001); name = ScreenshotInboxTests; productName = ScreenshotInboxTests; productReference = B0010000000000000000001A; productType = "com.apple.product-type.bundle.unit-test"; };
+		E00100000000000000000001 /* ShotDrawer */ = {isa = PBXNativeTarget; buildConfigurationList = F00100000000000000000002; buildPhases = (C00100000000000000000003 /* Sources */, C00100000000000000000001 /* Frameworks */, C00100000000000000000002 /* Resources */); buildRules = (); dependencies = (); name = ShotDrawer; productName = ShotDrawer; productReference = B0010000000000000000000E; productType = "com.apple.product-type.application"; };
+		E00100000000000000000003 /* ShotDrawerTests */ = {isa = PBXNativeTarget; buildConfigurationList = F00100000000000000000009; buildPhases = (C00100000000000000000005 /* Sources */, C00100000000000000000004 /* Frameworks */); buildRules = (); dependencies = (CA0300000000000000000001); name = ShotDrawerTests; productName = ShotDrawerTests; productReference = B0010000000000000000001A; productType = "com.apple.product-type.bundle.unit-test"; };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -131,10 +131,10 @@
 /* Begin XCBuildConfiguration section */
 		F00100000000000000000003 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_TESTABILITY = YES; GCC_C_LANGUAGE_STANDARD = gnu17; GCC_OPTIMIZATION_LEVEL = 0; ONLY_ACTIVE_ARCH = YES; SDKROOT = macosx; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; SWIFT_OPTIMIZATION_LEVEL = "-Onone";}; name = Debug; };
 		F00100000000000000000004 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_NS_ASSERTIONS = NO; GCC_C_LANGUAGE_STANDARD = gnu17; SDKROOT = macosx; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O";}; name = Release; };
-		F00100000000000000000005 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_ENTITLEMENTS = ScreenshotInbox/ScreenshotInbox.entitlements; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_APP_SANDBOX = YES; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity"; INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Screenshot Inbox"; MACOSX_DEPLOYMENT_TARGET = 13.0; MARKETING_VERSION = 0.1.0; PRODUCT_BUNDLE_IDENTIFIER = com.screenshotinbox.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0;}; name = Debug; };
-		F00100000000000000000006 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_ENTITLEMENTS = ScreenshotInbox/ScreenshotInbox.entitlements; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_APP_SANDBOX = YES; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity"; INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Screenshot Inbox"; MACOSX_DEPLOYMENT_TARGET = 13.0; MARKETING_VERSION = 0.1.0; PRODUCT_BUNDLE_IDENTIFIER = com.screenshotinbox.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0;}; name = Release; };
-		F00100000000000000000007 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; MACOSX_DEPLOYMENT_TARGET = 13.0; PRODUCT_BUNDLE_IDENTIFIER = com.screenshotinbox.app.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreenshotInbox.app/Contents/MacOS/ScreenshotInbox"; }; name = Debug; };
-		F00100000000000000000008 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; MACOSX_DEPLOYMENT_TARGET = 13.0; PRODUCT_BUNDLE_IDENTIFIER = com.screenshotinbox.app.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreenshotInbox.app/Contents/MacOS/ScreenshotInbox"; }; name = Release; };
+		F00100000000000000000005 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_ENTITLEMENTS = ShotDrawer/ShotDrawer.entitlements; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_APP_SANDBOX = YES; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = ShotDrawer; INFOPLIST_KEY_CFBundleName = ShotDrawer; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity"; INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 ShotDrawer"; MACOSX_DEPLOYMENT_TARGET = 13.0; MARKETING_VERSION = 0.1.0; PRODUCT_BUNDLE_IDENTIFIER = com.shotdrawer.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0;}; name = Debug; };
+		F00100000000000000000006 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_ENTITLEMENTS = ShotDrawer/ShotDrawer.entitlements; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_APP_SANDBOX = YES; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = ShotDrawer; INFOPLIST_KEY_CFBundleName = ShotDrawer; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity"; INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 ShotDrawer"; MACOSX_DEPLOYMENT_TARGET = 13.0; MARKETING_VERSION = 0.1.0; PRODUCT_BUNDLE_IDENTIFIER = com.shotdrawer.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0;}; name = Release; };
+		F00100000000000000000007 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; MACOSX_DEPLOYMENT_TARGET = 13.0; PRODUCT_BUNDLE_IDENTIFIER = com.shotdrawer.app.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShotDrawer.app/Contents/MacOS/ShotDrawer"; }; name = Debug; };
+		F00100000000000000000008 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; MACOSX_DEPLOYMENT_TARGET = 13.0; PRODUCT_BUNDLE_IDENTIFIER = com.shotdrawer.app.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShotDrawer.app/Contents/MacOS/ShotDrawer"; }; name = Release; };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */

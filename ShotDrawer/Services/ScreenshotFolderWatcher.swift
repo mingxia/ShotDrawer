@@ -4,7 +4,7 @@ import Foundation
 final class ScreenshotFolderWatcher {
     typealias Handler = @Sendable (URL) -> Void
 
-    private let queue = DispatchQueue(label: "com.screenshotinbox.folder-watcher", qos: .utility)
+    private let queue = DispatchQueue(label: "com.shotdrawer.folder-watcher", qos: .utility)
     private var source: DispatchSourceFileSystemObject?
     private var descriptor: Int32 = -1
     private var knownFiles = Set<String>()

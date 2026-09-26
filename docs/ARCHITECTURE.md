@@ -2,7 +2,7 @@
 
 ## Guiding boundaries
 
-Screenshot Inbox uses a vertical-slice approach while keeping its long-lived responsibilities separate:
+ShotDrawer uses a vertical-slice approach while keeping its long-lived responsibilities separate:
 
 - **Views** render state and forward user intent. They do not inspect screenshot content or decide which actions should exist.
 - **App state** owns presentation-level selection and user preferences.
@@ -40,7 +40,7 @@ Archiving changes only record state and never moves the original file. Deletion 
 
 ## File access model (Phase 2)
 
-The app sandbox will grant user-selected read/write access to the screenshot directory. Access will be restored from a security-scoped bookmark at launch and balanced with `startAccessingSecurityScopedResource()` / `stopAccessingSecurityScopedResource()`. Screenshot Inbox will not request Screen Recording permission because macOS remains responsible for capture.
+The app sandbox will grant user-selected read/write access to the screenshot directory. Access will be restored from a security-scoped bookmark at launch and balanced with `startAccessingSecurityScopedResource()` / `stopAccessingSecurityScopedResource()`. ShotDrawer will not request Screen Recording permission because macOS remains responsible for capture.
 
 ## Floating panel (Phase 7)
 

@@ -25,7 +25,7 @@ final class ScreenshotFolderAccess: ObservableObject {
     func chooseFolder() -> URL? {
         let panel = NSOpenPanel()
         panel.title = "Choose Screenshot Folder"
-        panel.message = "Screenshot Inbox watches this folder for new screenshots."
+        panel.message = "ShotDrawer watches this folder for new screenshots."
         panel.prompt = "Choose"
         panel.canChooseDirectories = true
         panel.canChooseFiles = false

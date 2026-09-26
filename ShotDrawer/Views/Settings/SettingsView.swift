@@ -6,7 +6,7 @@ struct SettingsView: View {
     var body: some View {
         Form {
             Section("General") {
-                Toggle("Launch Screenshot Inbox at login", isOn: Binding(
+                Toggle("Launch ShotDrawer at login", isOn: Binding(
                     get: { appState.launchAtLogin },
                     set: { appState.setLaunchAtLogin($0) }
                 ))
@@ -38,7 +38,7 @@ struct SettingsView: View {
 
             Section("Privacy") {
                 Label("Screenshot analysis happens on this Mac.", systemImage: "lock.shield")
-                Text("Screenshot Inbox does not upload your screenshots.")
+                Text("ShotDrawer does not upload your screenshots.")
                     .foregroundStyle(.secondary)
             }
         }

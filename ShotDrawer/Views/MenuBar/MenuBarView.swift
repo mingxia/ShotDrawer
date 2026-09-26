@@ -7,7 +7,7 @@ struct MenuBarView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
             VStack(alignment: .leading, spacing: 3) {
-                Text("Screenshot Inbox")
+                Text("ShotDrawer")
                     .font(.headline)
                 Text(appState.attentionSummary)
                     .font(.subheadline)
@@ -51,7 +51,7 @@ struct MenuBarView: View {
 
             Divider()
 
-            Button("Quit Screenshot Inbox") {
+            Button("Quit ShotDrawer") {
                 NSApplication.shared.terminate(nil)
             }
             .keyboardShortcut("q")

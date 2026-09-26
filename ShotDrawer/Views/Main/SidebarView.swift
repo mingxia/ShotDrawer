@@ -14,7 +14,7 @@ struct SidebarView: View {
             }
         }
         .listStyle(.sidebar)
-        .navigationTitle("Screenshot Inbox")
+        .navigationTitle("ShotDrawer")
         .safeAreaInset(edge: .bottom) {
             Button {
                 appState.openSettings()
@@ -26,7 +26,7 @@ struct SidebarView: View {
             .buttonStyle(.plain)
             .padding(.horizontal, 16)
             .padding(.vertical, 12)
-            .accessibilityHint("Opens Screenshot Inbox settings")
+            .accessibilityHint("Opens ShotDrawer settings")
         }
         .frame(minWidth: 190)
     }

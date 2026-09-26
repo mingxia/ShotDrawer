@@ -1,8 +1,19 @@
-# Screenshot Inbox
+# ShotDrawer
 
-> Your screenshots were taken for a reason.
+> A smarter home for your screenshots.
 
-Screenshot Inbox is a local-first, native macOS utility for the moment after a screenshot is taken. It will turn screenshots created with macOS (`⌘⇧3`, `⌘⇧4`, and `⌘⇧5`) into actionable inbox items without replacing the system capture experience.
+中文名称：截图抽屉
+
+ShotDrawer is a local-first native macOS utility built around the intent behind screenshots. It keeps the familiar macOS screenshot workflow, then helps you understand, act on, find, organize, and remove screenshots without leaving them scattered across the Desktop.
+
+## Product model
+
+**Capture → Understand → Act → Manage**
+
+- **Capture:** Keep using the macOS screenshot shortcuts you already know.
+- **Understand:** ShotDrawer recognizes text, links, QR codes, errors, and other useful content locally.
+- **Act:** Take the next useful action directly from the screenshot.
+- **Manage:** Browse screenshots visually, find them quickly, keep what matters, and remove what no longer does.
 
 ## Current milestone: Phase 7
 
@@ -27,16 +38,24 @@ macOS 13 is the minimum deployment target because the shell uses `MenuBarExtra`.
 
 ## Build and run
 
-1. Open `ScreenshotInbox.xcodeproj` in Xcode.
-2. Select the **ScreenshotInbox** scheme and **My Mac** destination.
+1. Open `ShotDrawer.xcodeproj` in Xcode.
+2. Select the **ShotDrawer** scheme and **My Mac** destination.
 3. Press **Run** (`⌘R`).
 
 Or build from Terminal on macOS:
 
 ```sh
-xcodebuild -project ScreenshotInbox.xcodeproj \
-  -scheme ScreenshotInbox \
+xcodebuild -project ShotDrawer.xcodeproj \
+  -scheme ShotDrawer \
   -destination 'platform=macOS' build
+```
+
+Run the test suite with:
+
+```sh
+xcodebuild -project ShotDrawer.xcodeproj \
+  -scheme ShotDrawer \
+  -destination 'platform=macOS' test
 ```
 
 ## Architecture
@@ -44,7 +63,7 @@ xcodebuild -project ScreenshotInbox.xcodeproj \
 The project starts with boundaries that later vertical slices can extend without moving filesystem, analysis, database, or action logic into views:
 
 ```text
-ScreenshotInbox/
+ShotDrawer/
 ├── App/          # lifecycle and shared observable state
 ├── Models/       # domain and navigation types
 ├── Services/     # filesystem, analysis, and action services (Phase 2+)
@@ -64,10 +83,10 @@ The app uses a user-selected screenshot directory and persists access with a sec
 Folder bookmarks are stored in `UserDefaults`; the SQLite database and thumbnail cache are stored under:
 
 ```text
-~/Library/Application Support/Screenshot Inbox/
+~/Library/Application Support/ShotDrawer/
 ```
 
-Screenshots and extracted content will remain on the Mac. The project has no account, backend, analytics SDK, or telemetry.
+Screenshots and extracted content remain on the Mac. ShotDrawer is local-first and has no account, backend, analytics SDK, telemetry, or screenshot upload.
 
 ## Known limitations
 

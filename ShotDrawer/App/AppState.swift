@@ -31,10 +31,10 @@ final class AppState: ObservableObject {
         let folderAccess = ScreenshotFolderAccess()
         self.folderAccess = folderAccess
         let applicationSupport = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
-            .appendingPathComponent("Screenshot Inbox", isDirectory: true)
+            .appendingPathComponent("ShotDrawer", isDirectory: true)
         try? FileManager.default.createDirectory(at: applicationSupport, withIntermediateDirectories: true)
         do {
-            repository = try ScreenshotRepository(databaseURL: applicationSupport.appendingPathComponent("ScreenshotInbox.sqlite"))
+            repository = try ScreenshotRepository(databaseURL: applicationSupport.appendingPathComponent("ShotDrawer.sqlite"))
         } catch {
             fatalError("Unable to open local screenshot database: \(error)")
         }
@@ -122,7 +122,7 @@ final class AppState: ObservableObject {
     }
 
     var menuBarLabel: String {
-        showInboxCount && inboxCount > 0 ? "Screenshot Inbox · \(inboxCount)" : "Screenshot Inbox"
+        showInboxCount && inboxCount > 0 ? "ShotDrawer · \(inboxCount)" : "ShotDrawer"
     }
 
     var attentionSummary: String {

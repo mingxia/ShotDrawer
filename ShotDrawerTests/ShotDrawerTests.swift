@@ -1,7 +1,7 @@
 import XCTest
-@testable import ScreenshotInbox
+@testable import ShotDrawer
 
-final class ScreenshotInboxTests: XCTestCase {
+final class ShotDrawerTests: XCTestCase {
     private func repository() throws -> ScreenshotRepository {
         let url = FileManager.default.temporaryDirectory
             .appendingPathComponent(UUID().uuidString)
